@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ajuda Aí</title>
+</head>
+<body>
+    <main>
+        <div>
+            <div class="textos">
+                <h1>Dê o primeiro passo na organização da sua vida financeira </h1>
+                <h2>Utilizando o método 50/30/20 - Método esse que já ajudou milhares de pessoas de forma simples e prática</h2>
+
+                <p>Foi criado pela atual senadora norte-americana Elizabeth Warren. Tendo como principal pano de fundo o controle financeiro e o equilíbrio do orçamento </p>
+                
+            </div>
+
+            <div class="video"> 
+                
+                
+                <iframe width="600" height="345" src="https://www.youtube.com/embed/70WntZlzgm8?si=P9AAW99avYgY-OuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                
+            </div>
+        </div>
+
+        <div class="pai">
+                <fieldset>
+                    <legend>Calculadora Ajuda Ai</legend>
+                    <div class="painel">
+                        <p>Dados sobre sua renda: </p>
+                        <span id="zero"></span>
+                    </div>
+                    <div class="filho">
+                         
+                         <div>
+                             <label for="renda">Valor da sua renda: <span>(líquida)</span></label> <br>
+                             <input type="text" id="renda" onblur="formatarMoeda('renda')">
+                         </div>
+                         <div>
+                             <label for="renda-extras">Rendas extras: <span>(caso tenha)</span></label> <br>
+                             <input type="text" id="renda-extras" onblur="formatarMoeda('renda-extras')">
+                         </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="painel">
+                        <p>Gastos com nessecidades: </p>
+                        <span id="um"></span>
+                    </div>
+                    
+                    <div class="filho">
+                         
+                        <div>
+                            <label for="alimentacao">Alimentação: <span>(Mês)</span></label> <br>
+                            <input type="text" id="alimentacao" onblur="formatarMoeda('alimentacao')">
+                        </div>
+                        <div>
+                            <label for="hab">Habitação: <span>(Aluguel...)</span></label> <br>
+                            <input type="text" id="hab" onblur="formatarMoeda('hab')">
+                        </div>
+                        <div>
+                            <label for="ultilidade">Utilidades: <span>(Água,luz,gás...)</span></label> <br>
+                            <input type="text" id="ultilidade" onblur="formatarMoeda('ultilidade')">
+                        </div>
+                        <div>
+                            <label for="outro-necessidade">Outros:</label> <br>
+                            <input type="text" id="outro-necessidade" onblur="formatarMoeda('outro-necessidade')">
+                        </div>
+                   </div>
+                   <br>
+
+                   <div class="painel">
+                        <p>Gastos com Desejos: </p>
+                        <span id="dois"></span>
+                    </div>
+                   
+                   <div class="filho">
+                        
+                       <div>
+                           <label for="comer-fora">Comer fora: <span></span></label> <br>
+                           <input type="text" id="comer-fora" onblur="formatarMoeda('comer-fora')">
+                       </div>
+                       <div>
+                           <label for="vestuario">Vestuário:</span></label> <br>
+                           <input type="text" id="vestuario" onblur="formatarMoeda('vestuario')">
+                       </div>
+                       <div>
+                           <label for="entretenimento">Entretenimento: <span></span></label> <br>
+                           <input type="text" id="entretenimento" onblur="formatarMoeda('entretenimento')">
+                       </div>
+                       <div>
+                           <label for="outro-desejo">Outros:</label><br>
+                           <input type="text" id="outro-desejo" onblur="formatarMoeda('outro-desejo')">
+                       </div>
+                  </div>
+                  <br>
+
+                <div class="painel">
+                    <p>Gastos com dívidas: </p>
+                    <span id="tres"></span>
+                </div>
+
+                  <div class="filho">
+                       
+                      <div>
+                          <label for="divida-gerais">Dívidas gerais:<span></span></label> <br>
+                          <input type="text" id="divida-gerais" onblur="formatarMoeda('divida-gerais')">
+                      </div>
+                      
+                      <div>
+                          <label for="cartoes">Dívidas de cartões:</span></label> <br>
+                          <input type="text" id="cartoes" onblur="formatarMoeda('cartoes')">
+                      </div>
+
+                      <div>
+                          <label for="outro-dividas">Outras Dívidas:</label><br>
+                          <input type="text" id="outro-dividas" onblur="formatarMoeda('outro-dividas')">
+                      </div>
+                 </div>
+                 <br>
+
+                 <div class="btn">
+                    <button 
+                        onclick="calcular('renda','renda-extras','alimentacao','hab','ultilidade','outro-necessidade','comer-fora','vestuario','entretenimento','outro-desejo','divida-gerais','cartoes','outro-dividas')">Calcular
+                 </button>
+                </div>
+
+                </fieldset>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <h3>Quer saber mais sobre o método ?</h3>
+            <h4>LEIA o que as notícias falam sobre ele</h4> <br>
+
+           <div class="imagens">
+                <a href="https://www.serasa.com.br/score/blog/metodo-50-30-20-como-utilizar/" target="_blank"><img src="./img/imgserasa.svg" alt="serasa"></a>
+
+                <a href="https://einvestidor.estadao.com.br/colunas/luis-claudio-agora-investimentos/metodo-50-30-20-elizabeth-warren/" target="_blank"><img src="./img/Estadao.jpg" alt="estadao"></a>
+
+                <a href="https://investidorsardinha.r7.com/aprender/metodo-50-30-20-como-funciona/" target="_blank"><img src="./img/R7_logo.svg.png"></a>
+           </div>
+
+           
+       
+        </div>
+    </footer>
+</body>
+</html>

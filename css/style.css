@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background-image: linear-gradient(120deg,#0a1214 40%,#033a47);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.textos{
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+.textos h1{
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.textos h2{
+    text-align: center;
+    padding: 15px;
+    color: aqua;
+    animation: pulsar 3s infinite
+}
+
+@keyframes pulsar{
+    0%{
+        color: aqua;
+    }
+    50%{
+        color: rgb(127, 213, 216);
+    }
+    100%{
+        color: rgb(0, 195, 255);
+    }
+
+}
+.textos p{
+    text-align: center;
+    padding: 7px;
+    font-size: 19px;
+}
+.video{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+ 
+}
+.video iframe{
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transition: 5.s;
+    animation: bordar 4s infinite;
+}
+
+@keyframes bordar{
+    0%{
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+    }
+    50%{
+        border-left: 3px solid blue;
+        border-right: 3px solid blue;
+    }
+    70%{
+        border-left: 3px solid rgba(0, 0, 255, 0.425);
+        border-right:3px solid rgba(0, 0, 255, 0.425);
+    }
+    100%{
+        border-left: 3px solid transparent;
+        border-right:3px solid transparent;
+    }
+
+}
+
+.pai{
+    width: 80%;
+    margin: 0 auto; 
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+.pai fieldset{
+    border-radius: 5px;
+}
+.pai legend{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pai p{
+    color: aqua;
+    text-align: center;
+    margin-top: 8px;
+}
+.filho{
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid #1ac2e7;
+    border-radius: 10px;
+}
+
+.btn{
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.btn button{
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #1ac2e7;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn button:hover{
+    color: aqua;
+    background-color: rgba(255, 255, 255, 0.301);
+    border: 1px solid aqua;
+}
+
+.painel{
+    width: 80%;
+    color: red;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.rodape{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 80%;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+}
+
+.imagens{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    
+}
+
+.imagens img{
+    width: 150px;
+    height: 80px;
+}
+
+@media(max-width:800px){
+    .pai{
+        width: 70%;
+    }
+    .filho{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+    }
+  
+}
+
+@media(max-width:570px){
+ .imagens{
+    width: 95%
+ }
+  .imagens img{
+    width: 100px;
+    height: 50px;
+  }
+ .textos h1{
+    font-size: 20px;
+ }
+ .textos h2{
+    font-size: 17px;
+ }
+ .textos p{
+    font-size: 14px
+ }
+ .pai{
+    width: 80%;
+}
+.rodape h3{
+    font-size: 14px;
+}
+.rodape h4{
+    font-size: 11px;
+}
+.video iframe{
+    width: 90%;
+    margin: 0 auto;
+    height: 180px;
+}
+}
+
+@media(max-width:370px){
+    .imagens img{
+        width: 70px;
+        height: 40px;
+      }
+    .video iframe{
+        width: 95%;
+        margin: 0 auto;
+        height: 150px;
+    }
+}
