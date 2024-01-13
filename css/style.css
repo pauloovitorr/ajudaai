@@ -180,6 +180,25 @@ body{
 }
 
 @media(max-width:570px){
+
+    .pai_texto{
+        width: 98%;
+        margin: 0 auto;
+      
+    }
+
+    .textos{
+        width: 98%;
+        margin: 0 auto;
+        color: white;
+    }
+
+    .pai{
+        width: 92%;
+        
+    }
+
+
  .imagens{
     width: 95%
  }
