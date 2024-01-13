@@ -181,23 +181,6 @@ body{
 
 @media(max-width:570px){
 
-    .pai_texto{
-        width: 98%;
-        margin: 0 auto;
-      
-    }
-
-    .textos{
-        width: 98%;
-        margin: 0 auto;
-        color: white;
-    }
-
-    .pai{
-        width: 92%;
-        
-    }
-
 
  .imagens{
     width: 95%
@@ -207,16 +190,33 @@ body{
     height: 50px;
   }
  .textos h1{
-    font-size: 20px;
+    font-size: 23px;
  }
  .textos h2{
-    font-size: 17px;
+    font-size: 20px;
  }
  .textos p{
-    font-size: 14px
+    font-size: 17px
  }
  .pai{
+    width: 90%;
+}
+.pai_texto{
+    width: 90%;
+    margin: 0 auto;
+    
+  
+}
+
+.textos{
+    width: 98%;
+    margin: 0 auto;
+    
+}
+
+.filho div input{
     width: 80%;
+    margin-bottom: 5px;
 }
 .rodape h3{
     font-size: 14px;
