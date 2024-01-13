@@ -213,13 +213,31 @@ body{
 }
 
 @media(max-width:370px){
+
+    .pai_texto{
+        width: 98%;
+        margin: 0 auto;
+      
+    }
+
+    .textos{
+        width: 98%;
+        margin: 0 auto;
+        color: white;
+    }
+
+    .pai{
+        width: 92%;
+        
+    }
     .imagens img{
         width: 70px;
         height: 40px;
       }
     .video iframe{
-        width: 98%;
+        width: 100%;
         margin: 0 auto;
         height: 140px;
+        border: 2px solid red;
     }
 }
