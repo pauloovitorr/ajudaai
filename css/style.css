@@ -204,8 +204,6 @@ body{
 .pai_texto{
     width: 90%;
     margin: 0 auto;
-    
-  
 }
 
 .textos{
@@ -250,7 +248,7 @@ body{
         
     }
     .imagens img{
-        width: 70px;
+        width: 71px;
         height: 40px;
       }
     .video iframe{
